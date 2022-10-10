@@ -17,14 +17,14 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        exact: true,
         element: <Home />,
-        exact: true,
       },
-      {
-        path: "/",
-        exact: true,
-        element: <Topics />,
-      },
+      // {
+      //   path: "/",
+      //   exact: true,
+      //   element: <Topics />,
+      // },
       {
         path: "/statistics",
         element: <Statistics />,
