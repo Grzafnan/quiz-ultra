@@ -16,7 +16,7 @@ const Topics = ({ topic }) => {
         <Link to={`quiz/${id}`}>
           <button
             type="button"
-            className="px-8 py-3 font-semibold text-white rounded-lg bg-violet-600"
+            className="px-8 py-3 font-bold text-white rounded-lg bg-violet-600 w-full"
           >
             Start Practice
           </button>
