@@ -18,9 +18,11 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        exact: true,
       },
       {
         path: "/",
+        exact: true,
         element: <Topics />,
       },
       {

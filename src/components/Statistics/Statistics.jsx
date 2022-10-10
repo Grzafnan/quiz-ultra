@@ -1,11 +1,7 @@
 import React, { PureComponent } from "react";
 import { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
 import { QuizContext } from "../Root/Root";
 import {
-  ComposedChart,
-  Line,
-  Area,
   Bar,
   XAxis,
   YAxis,
@@ -13,6 +9,8 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
+  ComposedChart,
+  Line,
 } from "recharts";
 
 const Statistics = () => {
@@ -24,8 +22,9 @@ const Statistics = () => {
         Statistics All Topics
       </h1>
 
-      <div className="flex justify-center ">
+      <ResponsiveContainer width="100%" height={300}>
         <ComposedChart
+          className="mx-auto  mt-10"
           width={500}
           height={400}
           data={datas}
@@ -44,7 +43,7 @@ const Statistics = () => {
           <Bar dataKey="total" barSize={20} fill="#413ea0" />
           <Line type="monotone" dataKey="total" stroke="#ff7300" />
         </ComposedChart>
-      </div>
+      </ResponsiveContainer>
     </div>
   );
 };
