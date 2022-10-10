@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Topics = ({ topic }) => {
   const { name, logo, id, total } = topic;
@@ -12,12 +13,14 @@ const Topics = ({ topic }) => {
           </h3>
           <p className="font-semibold">Quiz: {total}</p>
         </div>
-        <button
-          type="button"
-          className="px-8 py-3 font-semibold text-white rounded-lg bg-violet-600"
-        >
-          Start Practice
-        </button>
+        <Link to={`quiz/${id}`}>
+          <button
+            type="button"
+            className="px-8 py-3 font-semibold text-white rounded-lg bg-violet-600"
+          >
+            Start Practice
+          </button>
+        </Link>
       </article>
     </>
   );

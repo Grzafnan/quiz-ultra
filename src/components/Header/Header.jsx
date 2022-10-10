@@ -22,7 +22,7 @@ const Header = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <NavLink
-              to="/topics"
+              to="/"
               aria-label="Our product"
               title="Our product"
               className={({ isActive }) =>
@@ -136,7 +136,7 @@ const Header = () => {
                   <ul className="space-y-4">
                     <li>
                       <NavLink
-                        to="/topics"
+                        to="/"
                         aria-label="Our product"
                         title="Our product"
                         className={({ isActive }) =>
