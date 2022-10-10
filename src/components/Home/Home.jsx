@@ -8,8 +8,6 @@ import { QuizContext } from "../Root/Root";
 const Home = () => {
   const topicsData = useContext(QuizContext);
 
-  console.log(topicsData);
-
   return (
     <div>
       <section className="dark:bg-gray-800 dark:text-gray-100">
@@ -47,7 +45,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100">
+      <section className="py-6 sm:py-12 dark:bg-gray-800 dark:text-gray-100 md:mt-0 lg:mt-20">
         <div className="container p-6 mx-auto space-y-8">
           <div className="space-y-2 text-center">
             <h2 className="text-3xl font-bold">Partem reprimique an pro</h2>
@@ -56,7 +54,9 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-            <Topics />
+            {topicsData.data.map((topic) => (
+              <Topics key={topic.id} topic={topic} />
+            ))}
           </div>
         </div>
       </section>
