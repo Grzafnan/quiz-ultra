@@ -1,12 +1,14 @@
 import React from "react";
 import Options from "../Options/Options";
 import Swal from "sweetalert2";
+import { toast } from "react-toastify";
 
 const Questions = ({ questionData, idx }) => {
   const { correctAnswer, id, options, question } = questionData;
 
   const showAnswer = () => {
-    Swal.fire(`${correctAnswer}`);
+    // Swal.fire(`Answer: ${correctAnswer}`);
+    toast.success(`Answer: ${correctAnswer}`);
   };
 
   return (
