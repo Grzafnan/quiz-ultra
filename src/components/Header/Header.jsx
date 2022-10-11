@@ -139,7 +139,11 @@ const Header = () => {
                         to="/topics"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
+                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                        }
                       >
                         Topics
                       </NavLink>
