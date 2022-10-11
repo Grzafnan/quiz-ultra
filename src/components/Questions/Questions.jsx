@@ -6,9 +6,8 @@ import { toast } from "react-toastify";
 const Questions = ({ questionData, idx, right, wrong, setRight, setWrong }) => {
   const { correctAnswer, id, options, question } = questionData;
 
-  const showAnswer = () => {
-    // Swal.fire(`Answer: ${correctAnswer}`);
-    toast.success(`Answer: ${correctAnswer}`);
+  const showAnswer = (ans) => {
+    Swal.fire({ text: `Answer: ${ans}` });
   };
 
   return (
@@ -21,7 +20,7 @@ const Questions = ({ questionData, idx, right, wrong, setRight, setWrong }) => {
             {/* {question.replace("<p>", "").replace("</p>", "")} */}
           </span>
         </h3>
-        <button onClick={showAnswer} className="p-4 ">
+        <button onClick={() => showAnswer(correctAnswer)} className="p-4 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
