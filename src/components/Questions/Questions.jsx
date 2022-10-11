@@ -15,7 +15,11 @@ const Questions = ({ questionData, idx, right, wrong, setRight, setWrong }) => {
     <div className="card bg-base-200 w-3/4 mx-auto mb-6 shadow-lg mt-10 ">
       <div className=" flex items-center justify-between">
         <h3 className="p-2 md:p-10 text-xl">
-          <span className="font-semibold">Quiz: {idx + 1}</span> {question}
+          <span className="font-semibold text-2xl">Quiz: {idx + 1}</span>{" "}
+          <span className="text-blue-600 text-[18px] font-medium">
+            {question.split("<p>").join(" ").split("</p>").join(" ")}
+            {/* {question.replace("<p>", "").replace("</p>", "")} */}
+          </span>
         </h3>
         <button onClick={showAnswer} className="p-4 ">
           <svg

@@ -13,9 +13,11 @@ const Options = ({
     if (correctAnswer === option) {
       toast.success("Correct answer!", { autoClose: 500 });
       setRight(right + 1);
+      localStorage.setItem("RightAnswer", right + 1);
     } else {
       toast.error("Wrong answer!", { autoClose: 500 });
       setWrong(wrong + 1);
+      localStorage.setItem("WrongAnswer", wrong + 1);
     }
   };
 
