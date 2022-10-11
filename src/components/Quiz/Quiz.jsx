@@ -11,14 +11,14 @@ const Quiz = () => {
   const [wrong, setWrong] = useState(0);
 
   useEffect(() => {
-    const rightAnswer = localStorage.getItem("RightAnswer");
+    const rightAnswer = JSON.parse(localStorage.getItem("RightAnswer"));
     if (rightAnswer) {
       setRight(rightAnswer);
     }
   }, []);
 
   useEffect(() => {
-    const wrongAnswer = localStorage.getItem("WrongAnswer");
+    const wrongAnswer = JSON.parse(localStorage.getItem("WrongAnswer"));
     if (wrongAnswer) {
       setWrong(wrongAnswer);
     }
