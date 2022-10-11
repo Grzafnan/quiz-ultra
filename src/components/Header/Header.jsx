@@ -15,7 +15,7 @@ const Header = () => {
           className="inline-flex items-center"
         >
           <img className="w-10" src={logo} alt="" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 dark:text-white uppercase">
             Quiz-Ultra
           </span>
         </Link>
@@ -27,8 +27,8 @@ const Header = () => {
               title="Our product"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
               }
             >
               Topics
@@ -41,8 +41,8 @@ const Header = () => {
               title="Our product"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
               }
             >
               Statistics
@@ -55,8 +55,8 @@ const Header = () => {
               title="Product pricing"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
               }
             >
               Blog
@@ -70,7 +70,7 @@ const Header = () => {
               className={({ isActive }) =>
                 isActive
                   ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
               }
             >
               About
@@ -81,7 +81,7 @@ const Header = () => {
           <button
             aria-label="Open Menu"
             title="Open Menu"
-            className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
+            className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
             onClick={() => setIsMenuOpen(true)}
           >
             <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -141,8 +141,8 @@ const Header = () => {
                         title="Our product"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         Topics
@@ -155,8 +155,8 @@ const Header = () => {
                         title="Our product"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         Statistics
@@ -170,7 +170,7 @@ const Header = () => {
                         className={({ isActive }) =>
                           isActive
                             ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         Blog
@@ -183,8 +183,8 @@ const Header = () => {
                         title="About us"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         About

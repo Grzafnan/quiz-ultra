@@ -10,9 +10,7 @@ const About = () => {
           <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
             Let's talk!
           </h2>
-          <div className="dark:text-gray-400">
-            Vivamus in nisl metus? Phasellus.
-          </div>
+          <div>Vivamus in nisl metus? Phasellus.</div>
         </div>
         <Lottie
           className=" h-52 md:h-full"

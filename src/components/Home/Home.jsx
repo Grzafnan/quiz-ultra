@@ -6,11 +6,9 @@ import Topics from "../Topics/Topics";
 import { QuizContext } from "../Root/Root";
 
 const Home = () => {
-  // const topicsData = useContext(QuizContext);
-
   return (
     <div>
-      <section className="dark:bg-gray-800 dark:text-gray-100">
+      <section>
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex items-center justify-center md:p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <Lottie animationData={quiz} loop={true} />
