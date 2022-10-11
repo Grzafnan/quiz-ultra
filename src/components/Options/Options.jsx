@@ -18,7 +18,7 @@ const Options = ({ option, correctAnswer }) => {
         name="fav_language"
         value={option}
       />
-      <label className="ml-2" forhtml={option}>
+      <label className="ml-2" htmlFor={option}>
         {option}
       </label>
     </div>
