@@ -1,11 +1,21 @@
 import React from "react";
 import { toast } from "react-toastify";
-const Options = ({ option, correctAnswer }) => {
+
+const Options = ({
+  option,
+  correctAnswer,
+  right,
+  wrong,
+  setRight,
+  setWrong,
+}) => {
   const handleAnswer = (option) => {
     if (correctAnswer === option) {
       toast.success("Correct answer!", { autoClose: 500 });
+      setRight(right + 1);
     } else {
       toast.error("Wrong answer!", { autoClose: 500 });
+      setWrong(wrong + 1);
     }
   };
 

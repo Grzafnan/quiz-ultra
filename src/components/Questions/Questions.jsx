@@ -3,7 +3,7 @@ import Options from "../Options/Options";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
 
-const Questions = ({ questionData, idx }) => {
+const Questions = ({ questionData, idx, right, wrong, setRight, setWrong }) => {
   const { correctAnswer, id, options, question } = questionData;
 
   const showAnswer = () => {
@@ -41,7 +41,15 @@ const Questions = ({ questionData, idx }) => {
       </div>
       <div className="grid md:grid-cols-2 mb-6 px-2">
         {options.map((option, idx) => (
-          <Options key={idx} option={option} correctAnswer={correctAnswer} />
+          <Options
+            key={idx}
+            option={option}
+            correctAnswer={correctAnswer}
+            right={right}
+            wrong={wrong}
+            setRight={setRight}
+            setWrong={setWrong}
+          />
         ))}
       </div>
     </div>
