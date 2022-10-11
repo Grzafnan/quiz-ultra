@@ -22,10 +22,14 @@ const Header = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <NavLink
-              to="/"
+              to="/topics"
               aria-label="Our product"
               title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+              className={({ isActive }) =>
+                isActive
+                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
+                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"
+              }
             >
               Topics
             </NavLink>
@@ -132,7 +136,7 @@ const Header = () => {
                   <ul className="space-y-4">
                     <li>
                       <NavLink
-                        to="/"
+                        to="/topics"
                         aria-label="Our product"
                         title="Our product"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-400"

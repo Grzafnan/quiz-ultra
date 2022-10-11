@@ -17,14 +17,23 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        exact: true,
         element: <Home />,
       },
-      // {
-      //   path: "/",
-      //   exact: true,
-      //   element: <Topics />,
-      // },
+      {
+        path: "/topics",
+        element: <Topics />,
+      },
+
+      {
+        path: "topics/quiz/:id",
+        element: <Topics />,
+        loader: async ({ params }) => {
+          return fetch(
+            `https://openapi.programming-hero.com/api/quiz/${params.id}`
+          );
+        },
+      },
+
       {
         path: "/statistics",
         element: <Statistics />,

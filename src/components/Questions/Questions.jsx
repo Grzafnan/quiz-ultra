@@ -12,7 +12,7 @@ const Questions = ({ questionData, idx }) => {
   return (
     <div className="card bg-base-200 w-3/4 mx-auto mb-6 shadow-lg mt-10 ">
       <div className=" flex items-center justify-between">
-        <h3 className="p-4 md:p-10 text-xl">
+        <h3 className="p-2 md:p-10 text-xl">
           <span className="font-semibold">Quiz: {idx + 1}</span> {question}
         </h3>
         <button onClick={showAnswer} className="p-4 ">
