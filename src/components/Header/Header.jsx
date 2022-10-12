@@ -27,8 +27,8 @@ const Header = () => {
               title="Our product"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide  text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
               }
             >
               Home
@@ -41,8 +41,8 @@ const Header = () => {
               title="Our product"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
               }
             >
               Topics
@@ -55,8 +55,8 @@ const Header = () => {
               title="Our product"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
               }
             >
               Statistics
@@ -69,8 +69,8 @@ const Header = () => {
               title="Product pricing"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
               }
             >
               Blog
@@ -83,8 +83,8 @@ const Header = () => {
               title="About us"
               className={({ isActive }) =>
                 isActive
-                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-purple-400"
+                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
               }
             >
               About
@@ -155,8 +155,8 @@ const Header = () => {
                         title="Our product"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 dark:text-white  transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         Home
@@ -169,8 +169,8 @@ const Header = () => {
                         title="Our product"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         Topics
@@ -183,8 +183,8 @@ const Header = () => {
                         title="Our product"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         Statistics
@@ -197,8 +197,8 @@ const Header = () => {
                         title="Product pricing"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-purple-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-purple-400"
+                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         Blog
@@ -211,8 +211,8 @@ const Header = () => {
                         title="About us"
                         className={({ isActive }) =>
                           isActive
-                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
                         }
                       >
                         About
