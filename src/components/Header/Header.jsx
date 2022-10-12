@@ -22,6 +22,20 @@ const Header = () => {
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
             <NavLink
+              to="/home"
+              aria-label="Our product"
+              title="Our product"
+              className={({ isActive }) =>
+                isActive
+                  ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                  : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/topics"
               aria-label="Our product"
               title="Our product"
@@ -134,6 +148,20 @@ const Header = () => {
                 </div>
                 <nav>
                   <ul className="space-y-4">
+                    <li>
+                      <NavLink
+                        to="/home"
+                        aria-label="Our product"
+                        title="Our product"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-blue-400"
+                            : "font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                        }
+                      >
+                        Home
+                      </NavLink>
+                    </li>
                     <li>
                       <NavLink
                         to="/topics"

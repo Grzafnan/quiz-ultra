@@ -40,7 +40,7 @@ const Statistics = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="total" barSize={20} fill="#413ea0" />
+          <Bar dataKey="total" barize={20} fill="#413ea0" />
           <Line type="monotone" dataKey="total" stroke="#ff7300" />
         </ComposedChart>
       </ResponsiveContainer>
