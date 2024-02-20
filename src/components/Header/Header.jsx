@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import logo from "/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,9 +26,7 @@ const Header = () => {
               aria-label="Our product"
               title="Our product"
               className={({ isActive }) =>
-                isActive
-                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide  text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                `font-medium tracking-wide transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700 dark:text-blue-400 " : "text-gray-700 dark:text-white"}`
               }
             >
               Home
@@ -40,9 +38,7 @@ const Header = () => {
               aria-label="Our product"
               title="Our product"
               className={({ isActive }) =>
-                isActive
-                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                `font-medium tracking-wide transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700 dark:text-blue-400 " : "text-gray-700 dark:text-white"}`
               }
             >
               Topics
@@ -54,9 +50,7 @@ const Header = () => {
               aria-label="Our product"
               title="Our product"
               className={({ isActive }) =>
-                isActive
-                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                `font-medium tracking-wide transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700 dark:text-blue-400 " : "text-gray-700 dark:text-white"}`
               }
             >
               Statistics
@@ -68,9 +62,7 @@ const Header = () => {
               aria-label="Product pricing"
               title="Product pricing"
               className={({ isActive }) =>
-                isActive
-                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                `font-medium tracking-wide transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700 dark:text-blue-400 " : "text-gray-700 dark:text-white"}`
               }
             >
               Blog
@@ -82,9 +74,7 @@ const Header = () => {
               aria-label="About us"
               title="About us"
               className={({ isActive }) =>
-                isActive
-                  ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-purple-400"
-                  : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                `font-medium tracking-wide transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700 dark:text-blue-400 " : "text-gray-700 dark:text-white"}`
               }
             >
               About
@@ -147,16 +137,14 @@ const Header = () => {
                   </div>
                 </div>
                 <nav>
-                  <ul className="space-y-4">
+                  <ul className="flex flex-col space-y-4 items-center">
                     <li>
                       <NavLink
                         to="/home"
                         aria-label="Our product"
                         title="Our product"
                         className={({ isActive }) =>
-                          isActive
-                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 dark:text-white  transition-colors duration-200 hover:text-blue-400"
+                          `font-medium tracking-wide  transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700" : "text-gray-700"}`
                         }
                       >
                         Home
@@ -168,9 +156,7 @@ const Header = () => {
                         aria-label="Our product"
                         title="Our product"
                         className={({ isActive }) =>
-                          isActive
-                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                          `font-medium tracking-wide  transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700" : "text-gray-700"}`
                         }
                       >
                         Topics
@@ -182,9 +168,7 @@ const Header = () => {
                         aria-label="Our product"
                         title="Our product"
                         className={({ isActive }) =>
-                          isActive
-                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                          `font-medium tracking-wide  transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700" : "text-gray-700"}`
                         }
                       >
                         Statistics
@@ -196,9 +180,7 @@ const Header = () => {
                         aria-label="Product pricing"
                         title="Product pricing"
                         className={({ isActive }) =>
-                          isActive
-                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-purple-400"
-                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                          `font-medium tracking-wide  transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700" : "text-gray-700"}`
                         }
                       >
                         Blog
@@ -210,9 +192,7 @@ const Header = () => {
                         aria-label="About us"
                         title="About us"
                         className={({ isActive }) =>
-                          isActive
-                            ? "font-medium tracking-wide text-blue-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
-                            : "font-medium tracking-wide text-gray-700 dark:text-white transition-colors duration-200 hover:text-blue-400"
+                          `font-medium tracking-wide  transition-colors duration-200 hover:text-blue-400 ${isActive ? "text-blue-700" : "text-gray-700"}`
                         }
                       >
                         About
@@ -225,7 +205,7 @@ const Header = () => {
           )}
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
